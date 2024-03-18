@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "Rudravir/c0886606-assignment-4"
+    imagename = "rudravir1103/c0886606-assignment-4"
     registryCredential = 'docker_registry_key_1'
     dockerImage = ''
   }
@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/bennyhawk/C0886437_ClassAssignment_3.git', branch: 'master'])
+        git([url: 'https://github.com/Rudravir18/assignment_3_devops.git', branch: 'main'])
  
       }
     }
